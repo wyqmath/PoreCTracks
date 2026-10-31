@@ -1,0 +1,3 @@
+include README.md
+recursive-include examples *.tsv *.sizes *.bed
+recursive-include tests *.py
