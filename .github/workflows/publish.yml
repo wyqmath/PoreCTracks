@@ -8,7 +8,7 @@ on:
       tag:
         description: GitHub release tag containing the checked distribution files
         required: true
-        default: v0.1.0
+        default: v0.1.1
         type: string
       publish:
         description: Upload to PyPI (disable to check release asset retrieval only)

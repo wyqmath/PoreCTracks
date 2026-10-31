@@ -1,8 +1,3 @@
-"""Independent, tiny analytical examples for the public track-building contract.
-
-Run with python -m unittest discover -s tests -v. BigWig assertions inspect
-both values and missing coverage; zero signal is a real observation.
-"""
 from __future__ import annotations
 
 import csv

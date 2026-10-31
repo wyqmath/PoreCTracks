@@ -1,4 +1,3 @@
-"""Text input contracts; coordinates are zero-based, half-open."""
 from __future__ import annotations
 
 import csv

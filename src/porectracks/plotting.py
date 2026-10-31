@@ -1,4 +1,3 @@
-"""Region tracks and source-set distributions for a PoreCTracks run."""
 from __future__ import annotations
 
 import csv

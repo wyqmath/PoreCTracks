@@ -1,4 +1,3 @@
-"""Command-line entry points for track construction and inspection."""
 from __future__ import annotations
 
 import argparse

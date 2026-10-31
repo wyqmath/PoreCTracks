@@ -1,10 +1,10 @@
 # PoreCTracks
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-326A9D)](https://github.com/wyqmath/PoreCTracks/releases/tag/v0.1.0)
+[![Version](https://img.shields.io/badge/version-v0.1.1-326A9D)](https://github.com/wyqmath/PoreCTracks/releases/tag/v0.1.1)
 
 PoreCTracks converts Pore-C contact sets into four one-dimensional genomic signal tracks. It exports standard BigWig files for genome browsers and downstream analysis, together with source-order statistics, genomic span distributions, and plots.
 
-![PoreCTracks workflow overview](assets/porectracks-overview.png)
+![PoreCTracks workflow overview](https://raw.githubusercontent.com/wyqmath/PoreCTracks/v0.1.1/assets/porectracks-overview.png)
 
 The default channels are **2+, 3+, 4+, and 5+**, using source sets of order 2 through 10. A higher-order set contributes to every applicable lower-order channel.
 
@@ -13,7 +13,13 @@ The default channels are **2+, 3+, 4+, and 5+**, using source sets of order 2 th
 Requires Python 3.10 or newer.
 
 ```bash
-python -m pip install .
+python -m pip install porectracks
+porectracks --version
+```
+
+To run the bundled example, download the [source release](https://github.com/wyqmath/PoreCTracks/releases/tag/v0.1.1) or clone the repository and enter its directory:
+
+```bash
 porectracks build --contacts examples/contacts.tsv --chrom-sizes examples/chrom.sizes --bin-size 1024 --out example_tracks
 porectracks plot --tracks example_tracks --region chrExample:0-16384 --out example_tracks/region
 porectracks stats --tracks example_tracks --out example_tracks/distributions

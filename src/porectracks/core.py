@@ -1,4 +1,3 @@
-"""Cumulative, mass-normalized projected contact support."""
 from __future__ import annotations
 
 from collections import Counter
