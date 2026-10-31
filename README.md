@@ -1,10 +1,12 @@
 # PoreCTracks
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-326A9D)](https://github.com/wyqmath/PoreCTracks/releases/tag/v0.1.0)
+
 PoreCTracks converts Pore-C contact sets into four one-dimensional genomic signal tracks. It exports standard BigWig files for genome browsers and downstream analysis, together with source-order statistics, genomic span distributions, and plots.
 
 ![PoreCTracks workflow overview](assets/porectracks-overview.png)
 
-Version **0.1.0a3** is the first tool draft. The default channels are **2+, 3+, 4+, and 5+**, using source sets of order 2 through 10. A higher-order set contributes to every applicable lower-order channel.
+The default channels are **2+, 3+, 4+, and 5+**, using source sets of order 2 through 10. A higher-order set contributes to every applicable lower-order channel.
 
 ## Install and try the example
 

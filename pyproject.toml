@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "porectracks"
-version = "0.1.0a3"
+dynamic = ["version"]
 description = "Pore-C contact distributions as genomic tracks"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -19,3 +19,6 @@ Repository = "https://github.com/wyqmath/PoreCTracks"
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["porectracks*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "porectracks.__version__"}
